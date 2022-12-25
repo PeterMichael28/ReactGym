@@ -1,0 +1,131 @@
+.join {
+    display: flex;
+    gap: 10rem;
+    padding: 0 4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.join-l {
+    display: flex;
+    flex-direction: column;
+font-size: 2.9rem;
+font-weight: bold;
+text-transform: uppercase;
+position: relative;
+}
+
+
+.join-l>div{
+    display: flex;
+    color: white;
+    gap: 1rem;
+}
+
+.join-l>hr {
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 40%;
+    top: -2rem;
+}
+
+.join-r {
+    display: flex;
+    justify-content: center;;
+    align-items: flex-end;
+
+}
+
+.email-container {
+    display: flex;
+    gap: 3rem;
+    background-color: var(--gray);
+    padding: .8rem 2rem;
+}
+
+.email-container>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+
+::placeholder{
+    color: var(--lightgray);
+}
+
+.btn-join {
+    background-color: var(--orange);
+    color:white;
+}
+
+.thank-you {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 3rem;
+    background-color: var(--caloryCard);
+    padding: .8rem 2rem;
+}
+
+@media screen and (max-width:768px) {
+
+    .join {
+        gap: 2rem;
+        padding: 0 1rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+    
+    .join-l {
+        flex-direction: column;
+    font-size: large;
+
+    }
+    
+    
+    .join-l>div{
+        display: flex;
+        color: white;
+        gap: 2rem;
+    }
+    
+    
+    .join-r{
+        padding: 0;
+        width: 100%;
+    }
+    
+    .email-container {
+        display: flex;
+        gap: 1rem;
+        background-color: var(--gray);
+        padding: .6rem .3rem;
+    }
+    
+    .email-container>input {
+        width: 60%;
+    }
+    
+    .btn-join {
+        background-color: var(--orange);
+        color:white;
+        width: 30%;
+        padding: 5px;
+    }
+    
+    .thank-you {
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        gap: 3rem;
+        background-color: var(--caloryCard);
+        padding: .8rem 2rem;
+    }
+}

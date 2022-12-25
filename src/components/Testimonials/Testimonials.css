@@ -1,0 +1,130 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0 3rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.tes-l {
+    display: flex;
+    flex: 1 1;
+    gap: 1.5rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+.tes-l>:nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+}
+.tes-l>:nth-child(2),
+.tes-l>:nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.tes-l>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 29px;
+
+}
+.tes-l>:nth-child(5){
+
+    
+}
+
+.tes-r {
+    flex: 1 1;
+    position: relative
+}
+
+.tes-r>img {
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    width: 17rem;
+    height: 16rem;
+}
+
+.tes-r>:nth-child(1) {
+    position: absolute;
+    width: 17rem;
+    height: 16rem;
+    border: 2px solid var(--orange);
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.tes-r>:nth-child(2) {
+    position: absolute;
+    width: 17rem;
+    height: 16rem;
+    border: 2px solid var(--orange);
+    background: var(--planCard);
+    right: 7.2rem;
+    top: 2.5rem;
+}
+
+.arrows {
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+    gap: 1rem;
+    display: flex;
+}
+
+.arrows>img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {  
+
+
+    .testimonials{
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    
+
+    .tes-l>:nth-child(2),
+    .tes-l>:nth-child(3) {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+ 
+    
+    .tes-r {
+        flex: 1 1;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 2rem;
+    }
+    
+    .tes-r>img {
+        position: relative;
+        top: 0rem;
+        right: 0;
+    }
+    
+    .tes-r>:nth-child(1),
+    .tes-r>:nth-child(2) {
+        position: relative;
+        display: none;
+    }
+    
+    .arrows {
+        position: absolute;
+        gap: 1rem;
+        /* display: block; */
+        bottom: -3rem;
+        left: 35%;
+    }
+    
+}

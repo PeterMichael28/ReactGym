@@ -1,0 +1,421 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hero-blur {
+    width: 25rem;
+    height: 30rem;
+    left: 0;
+}
+.left-side {
+    padding: 2rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.right-side {
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+/* Header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 8rem;
+    height: 3rem;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-weight: bold;
+}
+.header-list>li{
+    transition: .4s ease color;
+}
+.header-list>li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/*The Best Ads*/
+.the-best-ads {
+    margin-top: 3rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 18px 14px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.the-best-ads>div {
+    height: 80%;
+    width: 4rem;
+    border-radius: 3rem;
+    position: absolute;
+    left: 8px;
+    background-color: var(--orange);
+    z-index: 1;
+}
+.the-best-ads>span {
+    z-index: 2;
+    font-size: .9rem;
+}
+
+/* Hero texts section*/
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-text-small {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+/*figures section*/
+.figures {
+    display: flex;
+    gap: 2rem;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+
+}
+.figures>div>span:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.figures>div>span:nth-of-type(2) {
+    text-transform: uppercase;
+    color: var(--gray);
+}
+
+/*hero buttons*/
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-buttons>:nth-child(1) {
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+.hero-buttons>:nth-child(2) {
+    color: white;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    width: 8rem;
+}
+
+/*Right Side*/
+
+.right-side>.btn {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    text-transform: uppercase;
+}
+
+.hearts {
+    background-color: var(--darkGrey);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+    position: absolute;
+    top: 6.5rem;
+    right: 5rem;
+}
+
+.hearts>img {
+    width: 2rem;
+}
+
+.hearts>span:nth-of-type(1) {
+    color: var(--gray);
+}
+.hearts>span:nth-of-type(2) {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+.right-side>img:nth-of-type(1) {
+    width: 22rem;
+    position: absolute;;
+    left: -10rem;
+    top: 9rem;
+}
+.right-side>img:nth-of-type(2) {
+    width: 17rem;
+    position: absolute;;
+    left: -14rem;
+    top: 4rem;
+    z-index: -1;
+}
+
+/* calories */
+
+.calories{
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    padding: 1rem;
+    width: fit-content;
+    top: 32rem;
+    right: 40rem;
+    background-color: var(--darkGrey);
+    color: white;
+    border-radius: 10px;
+}
+
+.calories>img {
+    width: 2rem;
+}
+
+.calories>div {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calories>div>:nth-child(1) {
+    color: var(--gray);
+    font-size: 1rem;
+}
+.calories>div>:nth-child(2) {
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .hero {
+      flex-direction: column;
+        
+    }
+    
+    .hero-blur {
+        width: 17rem;
+        height: 30rem;
+        left: 0;
+    }
+    .left-side {
+        padding: 1rem;
+        flex: 1 1;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    
+   
+
+    /*The Best Ads*/
+.the-best-ads {
+    margin-top: 0;
+    font-size: small;
+    align-self: center;
+   transform: scale(0.9);
+   width: 90%;
+}
+.the-best-ads>div {
+    width: 5rem;
+}
+
+/* Hero texts section*/
+
+.hero-text{
+    gap: 1rem;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text-small {
+    font-size: small;
+    text-align: center;
+}
+
+/*figures section*/
+.figures {
+    gap: 1rem;
+    justify-content: center;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+
+}
+.figures>div>span:nth-of-type(1) {
+    font-size: large;
+}
+
+.figures>div>span:nth-of-type(2) {
+    font-size: small;
+}
+
+/*hero buttons*/
+.hero-buttons {
+    gap: 1rem;
+    justify-content: center;
+}
+
+.hero-buttons>:nth-child(1) {
+    width: 7rem;
+}
+.hero-buttons>:nth-child(2) {
+    width: 7rem;
+}
+
+
+.right-side {
+    background-color: transparent;
+    flex: 1 1;
+}
+
+
+/*Right Side*/
+
+.right-side>.btn {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    text-transform: uppercase;
+}
+
+.hearts {
+    top: 3rem;
+    left: 1rem;
+}
+
+
+.right-side>img:nth-of-type(1) {
+    width: 22rem;
+    position: absolute;;
+    left: -10rem;
+    top: 9rem;
+}
+.right-side>img:nth-of-type(2) {
+    width: 17rem;
+    position: absolute;;
+    left: -14rem;
+    top: 4rem;
+    z-index: -1;
+}
+
+/* calories */
+
+.calories{
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+}
+
+.calories>img {
+    width: 2rem;
+}
+
+.calories>div {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calories>div>:nth-child(2) {
+    font-size: 1rem;
+
+}
+
+.right-side>img:nth-of-type(1) {
+    width: 16rem;
+    position: relative;
+    left: 7rem;
+    top: 6rem;
+    align-self: center;
+}
+.right-side>img:nth-of-type(2) {
+    width: 15rem;
+    position: absolute;;
+    left: 2rem;
+    top: 0rem;
+    z-index: -1;
+}
+
+
+
+/* Header section */
+
+.header {
+    align-items: center;
+}
+
+.logo {
+    width: 8rem;
+    height: 3rem;
+}
+
+.bars {
+    background-color: var(--appColor);
+    position: fixed;
+    padding: .6rem;
+    cursor: pointer;
+    right: 1rem;
+}
+
+.header-list {
+   position: fixed;
+    flex-direction: column;
+    top: 3rem;
+    gap: 2rem;
+    background-color: var(--appColor);
+    padding: 2rem;
+    z-index: 999;
+    right: 2rem;
+}
+.header-list>li{
+    transition: .4s ease color;
+}
+.header-list>li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+
+}   
